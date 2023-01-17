@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "Sneaker-Shop",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://samchyk.github.io/goit-react-hw-04-images/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
