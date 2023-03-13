@@ -11,9 +11,13 @@ function App() {
    const [cartItems, setCartItems] = React.useState([]);
    const [cartOpened, setCartOpened] = React.useState(false);
    const [searchValue, setSearchValue] = React.useState('');
-   const [Favorite, setFavorite] = React.useState([]);
+   // const [Favorite, setFavorite] = React.useState([]);
 
    React.useEffect(() => {
+
+      ////////////// Пробовал вместо axios -- Fetch////////////////////////// 
+
+      
       // fetch('https://6401d6200a2a1afebef33de4.mockapi.io/items')
       //    .then(res => {
       //       return res.json();
@@ -39,10 +43,10 @@ function App() {
       setCartItems(prev => [...prev, obj]);
    };
 
-   const onAddToFavorite = obj => {
-      axios.post('https://6401d6200a2a1afebef33de4.mockapi.io/Cart', obj);
-      setCartItems(prev => [...prev, obj]);
-   };
+   // const onAddToFavorite = obj => {
+   //    axios.post('https://6401d6200a2a1afebef33de4.mockapi.io/Cart', obj);
+   //    setCartItems(prev => [...prev, obj]);
+   // };
 
    const onRemoveItem = id => {
       axios.delete(`https://6401d6200a2a1afebef33de4.mockapi.io/Cart/${id}`);
